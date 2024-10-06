@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fones de Ouvido - ChirpConnect</title>
     <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="stylesheet" href="fones-de-ouvido.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/628c8d2499.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -13,7 +17,7 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="#">ChirpConnect</a>
+                <h1>ChirpConnect</h1>
             </div>
             <ul>
                 <li><a href="#">Início</a></li>
@@ -23,35 +27,121 @@
                 <li><a href="#">Contatos</a></li>
             </ul>
             <div class="search-bar">
-                <input type="text" id="search-input" placeholder="Buscar produtos">
-                <button id="search-button">🔍</button>
+                <input type="text" placeholder="Buscar produtos" aria-label="Buscar produtos">
+                <button type="button">Pesquisar</button>
+            </div>
+            <div class="user-options">
+                <a href="#">🛒 Carrinho</a>
+                <a href="#">👤 Login</a>
             </div>
         </nav>
     </header>
 
+    <!-- Seção de Destaques -->
+    <section class="destaques">
+        <h2>Destaques</h2>
+        <div class="produtos-destaque">
+            <article class="produto destaque">
+                <div class="produto-imagens">
+                    <div class="carrossel">
+                        <img src="fones1.jpg" alt="Fone de Ouvido Modelo 1">
+                        <img src="fones1-2.jpg" alt="Fone de Ouvido Modelo 1 - Lado">
+                    </div>
+                </div>
+                <h2>Fone de Ouvido Modelo 1</h2>
+                <p>Descrição do Fone de Ouvido Modelo 1.</p>
+                <span class="preco">R$ 299,90</span>
+                <div class="avaliacao">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <button type="button">Comprar</button>
+            </article>
+            <article class="produto destaque">
+                <div class="produto-imagens">
+                    <div class="carrossel">
+                        <img src="fones2.jpg" alt="Fone de Ouvido Modelo 2">
+                        <img src="fones2-2.jpg" alt="Fone de Ouvido Modelo 2 - Lado">
+                    </div>
+                </div>
+                <h2>Fone de Ouvido Modelo 2</h2>
+                <p>Descrição do Fone de Ouvido Modelo 2.</p>
+                <span class="preco">R$ 349,90</span>
+                <div class="avaliacao">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button type="button">Comprar</button>
+            </article>
+        </div>
+    </section>
+
     <!-- Conteúdo de produtos -->
     <main>
         <h1>Fones de Ouvido</h1>
-        <div class="produtos">
-            <div class="produto">
-                <img src="fones1.jpg" alt="Fone 1">
-                <h2>Fone de Ouvido Modelo 1</h2>
-                <p>Descrição do Fone de Ouvido Modelo 1.</p>
-                <span>R$ 299,90</span>
-                <button>Comprar</button>
-            </div>
-            <div class="produto">
-                <img src="fones2.jpg" alt="Fone 2">
-                <h2>Fone de Ouvido Modelo 2</h2>
-                <p>Descrição do Fone de Ouvido Modelo 2.</p>
-                <span>R$ 349,90</span>
-                <button>Comprar</button>
-            </div>
+        <section class="produtos">
+            <article class="produto">
+                <img src="fones3.jpg" alt="Fone de Ouvido Modelo 3">
+                <h2>Fone de Ouvido Modelo 3</h2>
+                <p>Descrição do Fone de Ouvido Modelo 3.</p>
+                <span class="preco">R$ 399,90</span>
+                <div class="avaliacao">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <button type="button">Comprar</button>
+            </article>
+            <article class="produto">
+                <img src="fones4.jpg" alt="Fone de Ouvido Modelo 4">
+                <h2>Fone de Ouvido Modelo 4</h2>
+                <p>Descrição do Fone de Ouvido Modelo 4.</p>
+                <span class="preco">R$ 249,90</span>
+                <div class="avaliacao">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <button type="button">Comprar</button>
+            </article>
             <!-- Adicione mais produtos conforme necessário -->
-        </div>
+        </section>
     </main>
 
-    <script src="main.js"></script>
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Sobre Nós</h3>
+                <p>Na ChirpConnect, oferecemos os melhores eletrônicos com preços acessíveis. Explore nosso catálogo e aproveite as melhores ofertas.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Serviço</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contato</h3>
+                <p>Email: contato@chirpconnect.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+            </div>
+        </div>
+        <p>&copy; 2024 ChirpConnect. Todos os direitos reservados.</p>
+    </footer>
 </body>
 
 </html>
