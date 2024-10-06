@@ -1,0 +1,189 @@
+ /* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos da barra de navegação */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    transition: background-color 0.5s ease;
+}
+
+header {
+    background-color: #232f3e;
+    padding: 1em 2em;
+    transition: background-color 0.5s ease;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.5em;
+    color: #f3a847;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f3a847;
+}
+
+nav ul li a:hover::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #f3a847;
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 0.5em;
+    width: 20em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: #f3a847;
+    outline: none;
+}
+
+.search-bar button {
+    background-color: #f3a847;
+    border: none;
+    padding: 0.5em 1em;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 0.5em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.search-bar button:hover {
+    background-color: #e59400;
+    transform: scale(1.05);
+}
+
+/* Estilos da área de produtos */
+main {
+    padding: 2em;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 2em;
+    margin: 2em 0;
+}
+
+.produto {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.produto img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.produto img:hover {
+    transform: scale(1.1);
+}
+
+.produto h2 {
+    font-size: 1.25em;
+    color: #333;
+}
+
+.produto p {
+    font-size: 0.875em;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+.produto span {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #d2379b;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.produto button {
+    background-color: #232f3e;
+    color: white;
+    padding: 0.75em 1.5em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.produto button:hover {
+    background-color: #37475a;
+    transform: scale(1.05);
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito de transição suave ao rolar a página */
+html {
+    scroll-behavior: smooth;
+}
